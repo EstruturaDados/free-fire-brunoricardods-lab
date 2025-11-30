@@ -101,7 +101,7 @@ void adicionar_item() {
 }
 
 
-// --- Função: Remover Item (CORRIGIDA) ---
+// --- Função: Remover Item 
 void remover_item() {
     char nome_remover[TAMANHO_STRING];
     int i;
@@ -110,9 +110,7 @@ void remover_item() {
     printf("\n--- Remover Item ---\n");
 
     printf("Digite o NOME do item a remover: ");
-    
-    // CORREÇÃO: REMOVIDO o limpar_buffer() que estava aqui antes. 
-    // O buffer já está limpo pelo 'main' após a leitura da opção.
+         
     fgets(nome_remover, TAMANHO_STRING, stdin);
     nome_remover[strcspn(nome_remover, "\n")] = '\0'; 
 
